@@ -8,7 +8,7 @@ display:flex;
 flex-direction:column;
 justify-center:center;
 align-items:center;
-gap:300px;
+gap:270px;
 padding-top:120px;
 `;
 
@@ -28,9 +28,9 @@ gap:10px;
 
 const ClaimButton = styled.button`
 background:ivory;
-padding:12px;
+padding:15px;
 font-size:12px;
-width:250px;
+width:280px;
 border-radius:5px;
 font-weight:bold;
 cursor:pointer;
