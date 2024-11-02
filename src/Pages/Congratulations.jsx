@@ -20,7 +20,7 @@ display:flex;
 flex-direction:column;
 justify-center:center;
 align-items:center;
-gap:275px;
+gap:250px;
 padding-top:60px;
 `;
 
@@ -53,9 +53,9 @@ font-size:13px;
 
 const CongratulationBtn = styled.button`
 background:ivory;
-padding:12px;
+padding:15px;
 font-size:12px;
-width:250px;
+width:280px;
 border-radius:5px;
 font-weight:bold;
 cursor:pointer;
@@ -69,6 +69,12 @@ const CelebrateImg=styled.img``;
 
 
 function Congratulation() {
+  const navigateObj=useNavigate();
+
+  const moveToApp=()=>{
+    navigateObj("/app")
+  }
+
     return (
       <Container>
 
@@ -80,7 +86,7 @@ function Congratulation() {
 
         <CongratulationBtnParentContainer>
           <CongratulationBtnTxt>Come tomorrow for more</CongratulationBtnTxt>
-          <CongratulationBtn>Ok,Thanks Dawg</CongratulationBtn>
+          <CongratulationBtn onClick={()=>{moveToApp()}}>Ok,Thanks Dawg</CongratulationBtn>
         </CongratulationBtnParentContainer>
         </MainContainer>
         

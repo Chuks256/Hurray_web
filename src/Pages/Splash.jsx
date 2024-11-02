@@ -40,10 +40,19 @@ transform:scale(90%);
 }
 `;
 
-const LogoImg = styled.img``;
+const LogoImg = styled.img`
+`;
+
 
 
 function Splash() {
+  const navigateObj=useNavigate();
+
+  const moveToMain=()=>{
+    navigateObj("/congratulation")
+  }
+
+
   return (
     <Container>
       <LogoImg src={hurray_logo} />
@@ -52,7 +61,7 @@ function Splash() {
         <SplashDetails>
         Claim <b>Hurray</b> point which wll be later converted to data
         </SplashDetails>
-        <ClaimButton>Start Claiming</ClaimButton>
+        <ClaimButton onClick={()=>{moveToMain()}}>Start Claiming</ClaimButton>
       </SubContainer>
 
     </Container>
