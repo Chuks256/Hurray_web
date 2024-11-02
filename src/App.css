@@ -1,0 +1,58 @@
+
+@font-face {
+  font-family:"hurrayBold";
+  src: url("./assets/fonts/Poppins-Black.ttf");
+}
+
+@font-face {
+  font-family:"hurrayRegular";
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+
+
+:root{
+  --global-regular-font:"hurrayRegular";
+  --global-bold-font:"hurrayBold";
+  --global-bg-theme:#0A0B0C;
+  --global-txt-color:ivory;
+  --celebrate-bg-theme:#0048FF;
+  --royal-bg-theme:#6A00FF;
+  --global-textbox-bg-theme:#171717;
+  --danger-bg-theme:#F3381F;
+  --lock-grey-bg-theme:#171818;
+  --lock-grey-txt-color:#8C8C88;
+}
+
+*{
+  user-select: none;
+}
+
+button{
+  border-style:solid;
+  border-color:transparent;
+}
+
+input{
+  background:var(--global-textbox-bg-theme);
+  border-style:solid;
+  border-color:transparent;
+  color:var(--global-txt-color);
+  outline:none;
+}
+
+input[type=number]::-webkit-outer-spin-button, 
+
+input[type=number]::-webkit-inner-spin-button {
+
+  -webkit-appearance: none;
+
+  margin: 0;
+
+}
+
+body{
+  font-family:var(--global-regular-font);
+  background-color:var(--global-bg-theme);
+  padding:0px;
+  box-sizing: border-box;
+}
