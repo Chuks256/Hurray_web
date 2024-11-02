@@ -47,15 +47,15 @@ background:var(--lock-grey-bg-theme);
 padding:13px;
 font-size:12px;
 color:var(--lock-grey-txt-color);
-width:250px;
+width:280px;
 border-radius:5px;
 font-weight:bold;
 cursor:pointer;
 display:flex;
 transition:linear,200ms;
+gap:30px;
 align-items:center;
 justify-content:center;
-gap:20px;
 &:focus{
 transform:scale(90%);
 }
@@ -63,9 +63,9 @@ transform:scale(90%);
 
 const AboutBtn = styled.button `
 background:ivory;
-padding:13px;
+padding:15px;
 font-size:12px;
-width:250px;
+width:280px;
 border-radius:5px;
 font-weight:bold;
 cursor:pointer;

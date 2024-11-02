@@ -3,6 +3,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import hurray_logo from "../assets/hurray_logo.png";
 
+
 const Container =styled.div`
 display:flex;
 flex-direction:column;
@@ -51,12 +52,10 @@ function Splash() {
   const moveToMain=()=>{
     navigateObj("/congratulation")
   }
-
-
-  return (
-    <Container>
+ 
+ return (
+<Container>
       <LogoImg src={hurray_logo} />
-
       <SubContainer>
         <SplashDetails>
         Claim <b>Hurray</b> point which wll be later converted to data
